@@ -20,7 +20,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args); // mvn clean install, mvn spring-boot:run -pl application
+        SpringApplication.run(Application.class, args); // mvn clean install mvn spring-boot:run -pl application
     }
 
 }
