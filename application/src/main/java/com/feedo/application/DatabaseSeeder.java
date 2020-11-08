@@ -25,7 +25,8 @@ public class DatabaseSeeder {
         List<RestaurantEntity> articles = Arrays.asList(
                 new RestaurantEntity(new Restaurant("Bar Manolo", 840002L, "Manolo salutes you", BigDecimal.ONE, "manolo's provider")),
                 new RestaurantEntity(new Restaurant("100 birritas", 840003L, "beer>water", BigDecimal.ONE, "lefe")),
-                new RestaurantEntity(new Restaurant("wok2wok", 840004L, "welcome to Amsterdam", BigDecimal.ONE, "AMSTERDAM S.L."))
+                new RestaurantEntity(new Restaurant("wok2wok", 840004L, "welcome to Amsterdam", BigDecimal.ONE, "AMSTERDAM S.L.")),
+                new RestaurantEntity(new Restaurant("bar test", 840007L, "test", BigDecimal.ONE, "test S.L."))
         );
         this.restaurantRepository.saveAll(articles);
     }
