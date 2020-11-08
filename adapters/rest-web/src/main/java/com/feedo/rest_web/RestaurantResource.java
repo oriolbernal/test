@@ -11,9 +11,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping(RestaurantResource.RESTAURANTS)
+@RequestMapping()
 public class RestaurantResource {
-    public static final String RESTAURANTS = "/restaurants";
 
     private final RestaurantService restaurantService;
 
