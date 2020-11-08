@@ -28,12 +28,12 @@ public class RestaurantResource {
                 .collect(Collectors.toList());
     }
 
-    @GetMapping("hi")
+    @GetMapping("/hi")
     public String hi() {
         return "Hi my friend!!!";
     }
 
-    @GetMapping("bye")
+    @GetMapping("/bye")
     public String bye() {
         return "Bye my friend";
     }
