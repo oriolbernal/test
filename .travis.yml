@@ -1,0 +1,29 @@
+
+language: java
+#jdk: openjdk14 #problems with sonar-maven-plugin
+branches:
+  only:
+    - develop
+    - "/^release-[0-999].[0-999]$/"
+    - master
+notifications:
+  #slack:
+    #secure:
+  email:
+    recipients:
+      - obernalpo@gmail.com
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+addons:
+  sonarcloud:
+    organization: "oriolbernal"
+    token:
+      secure: $SONAR
+
+script:
+  - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=oriolbernal -Dsonar.login=$SONAR
+deploy:
+  provider: heroku
+  api_key: $HEROKU
+  on:
+    branch: master
