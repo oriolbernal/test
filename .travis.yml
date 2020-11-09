@@ -21,7 +21,7 @@ addons:
       secure: $SONAR
 
 script:
-  - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=oriolbernal -Dsonar.login=$SONAR
+  - mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=oriolbernal_test -Dsonar.login=$SONAR
 deploy:
   provider: heroku
   api_key: $HEROKU
