@@ -17,12 +17,6 @@
     <name>${project.groupId}.${project.artifactId}</name>
 
     <properties>
-        <!-- SONAR_TOKEN -->
-        <!-- 03cca56dff96159dd609b04d35d4b23f459a00dc -->
-        <!-- Sonar -->
-        <sonar.projectKey>oriolbernal_test</sonar.projectKey>
-        <sonar.organization>oriolbernal</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <!-- Encode -->
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
