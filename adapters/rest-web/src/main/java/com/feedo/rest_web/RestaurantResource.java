@@ -34,7 +34,7 @@ public class RestaurantResource {
 
     @GetMapping("/bye")
     public String bye() {
-        return "Bye my friend";
+        return "Bye my friend!!!";
     }
 
 }
