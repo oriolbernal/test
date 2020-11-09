@@ -41,4 +41,5 @@ public class RestaurantResource {
     public String how() {
         return "how my friend!!!";
     }
+
 }

@@ -1,8 +1,8 @@
 package com.feedo.application;
 
 import com.feedo.domain.models.Restaurant;
-import com.feedo.persistence_mongodb.entities.RestaurantEntity;
-import com.feedo.persistence_mongodb.repositories.RestaurantRepository;
+import com.feedo.persistence_postgres.entities.RestaurantEntity;
+import com.feedo.persistence_postgres.repositories.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -3,8 +3,8 @@ package com.feedo.application;
 import com.feedo.domain.ports.RestaurantPersistence;
 import com.feedo.domain.services.RestaurantService;
 import com.feedo.domain.services.services_impl.RestaurantServiceImpl;
-import com.feedo.persistence_mongodb.adapters.RestaurantPersistenceMongodb;
-import com.feedo.persistence_mongodb.repositories.RestaurantRepository;
+import com.feedo.persistence_postgres.repositories.RestaurantRepository;
+import com.feedo.persistence_postgres.adapters.RestaurantPersistencePostgres;
 import com.feedo.rest_web.RestaurantResource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -23,7 +23,7 @@ public class ApplicationConfiguration {
 
     @Bean
     public RestaurantPersistence restaurantPersistence(RestaurantRepository restaurantRepository) {
-        return new RestaurantPersistenceMongodb(restaurantRepository);
+        return new RestaurantPersistencePostgres(restaurantRepository);
     }
 
 }

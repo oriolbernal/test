@@ -33,6 +33,12 @@
             <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.feedo</groupId>
+            <artifactId>persistence-postgres</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- Asynchronous programming -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -16,6 +16,7 @@
 
     <modules>
         <module>persistence-mongodb</module>
+        <module>persistence-postgres</module>
         <module>rest-web</module>
     </modules>
 
