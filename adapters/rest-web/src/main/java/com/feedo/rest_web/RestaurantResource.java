@@ -37,4 +37,8 @@ public class RestaurantResource {
         return "Bye my friend!!!";
     }
 
+    @GetMapping("/how")
+    public String how() {
+        return "how my friend!!!";
+    }
 }
