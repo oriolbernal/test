@@ -26,4 +26,5 @@ public class ApplicationConfiguration {
         return new RestaurantPersistencePostgres(restaurantRepository);
     }
 
+
 }

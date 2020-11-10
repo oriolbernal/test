@@ -1,13 +1,10 @@
 package com.feedo.application;
 
-import com.feedo.persistence_postgres.repositories.RestaurantRepository;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication(
 /*        scanBasePackageClasses = {
@@ -21,6 +18,8 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 )
 //@EnableMongoRepositories(basePackageClasses = RestaurantRepository.class)
 //@EnableJpaRepositories("com.feedo.persistence_postgres.repositories")
+@EnableJpaRepositories("com.feedo.persistence_postgres.repositories")
+@EntityScan("com.feedo.persistence_postgres.entities")
 public class Application {
 
     public static void main(String[] args) {
