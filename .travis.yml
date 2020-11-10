@@ -25,5 +25,6 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU
+  app: testiiiiiing
   on:
     branch: master
