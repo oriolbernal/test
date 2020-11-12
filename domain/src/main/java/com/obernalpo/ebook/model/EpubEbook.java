@@ -12,7 +12,7 @@ public class EpubEbook extends Ebook {
         this.type = type;
         this.data = data;
         try {
-            init("C:\\Users\\obernalp\\Desktop\\feedo-rest-app\\domain\\src\\main\\resources\\targetFile.tmp");
+            init("targetFile.tmp");
         } catch (Exception e) {
             this.metadata = new Metadata(null);
             e.printStackTrace();
