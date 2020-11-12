@@ -1,0 +1,109 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>1984 (Trad. Miguel Temprano García)</dc:title>
+    <dc:creator opf:role="aut" opf:file-as="">George Orwell</dc:creator>
+    <dc:contributor opf:file-as="Temprano García, Miguel" opf:role="trl">Miguel Temprano García</dc:contributor>
+    <dc:description>«No creo que la sociedad que he descrito en 1984 necesariamente llegue a ser una realidad, pero sí creo que puede llegar a existir algo parecido», escribía Orwell después de publicar su novela. Corría el año 1948, y la realidad se ha encargado de convertir esa pieza —entonces de ciencia ficción— en un manifiesto de la realidad.En el año 1984 Londres es una ciudad lúgubre en la que la Policía del Pensamiento controla de forma asfixiante la vida de los ciudadanos. Winston Smith es un peón de este engranaje perverso y su cometido es reescribir la historia para adaptarla a lo que el Partido considera la versión oficial de los hechos. Hasta que decide replantearse la verdad del sistema que los gobierna y somete.</dc:description>
+    <dc:date>1949-01-01T00:00:00+00:00</dc:date>
+    <dc:date opf:event="modification">2018-06-07</dc:date>
+    <dc:publisher></dc:publisher>
+    <dc:contributor opf:role="bkp"></dc:contributor>
+    <dc:subject>Ciencia ficción</dc:subject>
+    <dc:language>es</dc:language>
+    <meta content="0.8.6" name="Sigil version"/>
+    <meta name="cover" content="cover.jpg"/>
+    <meta name="calibre:title_sort" content=""/>
+    <meta name="calibre:series" content=""/>
+    <meta name="calibre:rating" content=""/>
+    <meta name="calibre:user_metadata:#version" content="{&quot;is_category&quot;: true, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 5, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 25, &quot;search_terms&quot;: [&quot;#version&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {&quot;cache_to_list&quot;: &quot;|&quot;, &quot;list_to_ui&quot;: &quot;, &quot;, &quot;ui_to_list&quot;: &quot;,&quot;}, &quot;is_multiple&quot;: &quot;|&quot;, &quot;datatype&quot;: &quot;text&quot;, &quot;#value#&quot;: [&quot;1.2&quot;], &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_5&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;version&quot;, &quot;display&quot;: {&quot;is_names&quot;: false}, &quot;name&quot;: &quot;Versión&quot;}"/>
+    <meta name="calibre:user_metadata:#autor_ord" content="{&quot;is_category&quot;: false, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 3, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 23, &quot;search_terms&quot;: [&quot;#autor_ord&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {}, &quot;is_multiple&quot;: null, &quot;datatype&quot;: &quot;composite&quot;, &quot;#value#&quot;: &quot;George Orwell&quot;, &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_3&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;autor_ord&quot;, &quot;display&quot;: {&quot;composite_template&quot;: &quot;{author_sort}&quot;, &quot;contains_html&quot;: false, &quot;make_category&quot;: false, &quot;use_decorations&quot;: 0, &quot;composite_sort&quot;: &quot;text&quot;}, &quot;name&quot;: &quot;Autores&quot;}"/>
+    <meta name="calibre:user_metadata:#epg_id" content="{&quot;is_category&quot;: false, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 4, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 24, &quot;search_terms&quot;: [&quot;#epg_id&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {}, &quot;is_multiple&quot;: null, &quot;datatype&quot;: &quot;float&quot;, &quot;#value#&quot;: 10028074.0, &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_4&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;epg_id&quot;, &quot;display&quot;: {&quot;number_format&quot;: &quot;{0:0&gt;6.0f}&quot;}, &quot;name&quot;: &quot;EPG Id&quot;}"/>
+    <meta name="calibre:user_metadata:#pages" content="{&quot;is_category&quot;: false, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 2, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 22, &quot;search_terms&quot;: [&quot;#pages&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple2&quot;: {}, &quot;is_multiple&quot;: null, &quot;datatype&quot;: &quot;int&quot;, &quot;#value#&quot;:  292, &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_2&quot;, &quot;is_editable&quot;: true, &quot;label&quot;: &quot;pages&quot;, &quot;display&quot;: {&quot;number_format&quot;: &quot;{0:,}&quot;}, &quot;name&quot;: &quot;Páginas&quot;}"/>
+    <meta name="calibre:user_metadata:#estado" content="{&quot;is_category&quot;: true, &quot;#extra#&quot;: null, &quot;kind&quot;: &quot;field&quot;, &quot;is_custom&quot;: true, &quot;is_csp&quot;: false, &quot;colnum&quot;: 7, &quot;column&quot;: &quot;value&quot;, &quot;rec_index&quot;: 26, &quot;search_terms&quot;: [&quot;#estado&quot;], &quot;link_column&quot;: &quot;value&quot;, &quot;label&quot;: &quot;estado&quot;, &quot;is_multiple&quot;: null, &quot;datatype&quot;: &quot;text&quot;, &quot;#value#&quot;: &quot;Ver.&quot;, &quot;category_sort&quot;: &quot;value&quot;, &quot;table&quot;: &quot;custom_column_7&quot;, &quot;is_editable&quot;: true, &quot;is_multiple2&quot;: {}, &quot;display&quot;: {&quot;use_decorations&quot;: 0}, &quot;name&quot;: &quot;Estado&quot;}"/>
+  </metadata>
+  <manifest>
+    <item href="Text/cubierta.xhtml" id="cubierta.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/sinopsis.xhtml" id="sinopsis.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/titulo.xhtml" id="titulo.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/info.xhtml" id="info.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0001.xhtml" id="Section0001.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0002.xhtml" id="Section0002.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0003.xhtml" id="Section0003.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0004.xhtml" id="Section0004.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0005.xhtml" id="Section0005.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0006.xhtml" id="Section0006.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0007.xhtml" id="Section0007.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0008.xhtml" id="Section0008.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0009.xhtml" id="Section0009.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0010.xhtml" id="Section0010.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0011.xhtml" id="Section0011.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0012.xhtml" id="Section0012.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0013.xhtml" id="Section0013.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0014.xhtml" id="Section0014.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0015.xhtml" id="Section0015.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0016.xhtml" id="Section0016.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0017.xhtml" id="Section0017.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0018.xhtml" id="Section0018.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0019.xhtml" id="Section0019.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0020.xhtml" id="Section0020.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0021.xhtml" id="Section0021.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0022.xhtml" id="Section0022.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0023.xhtml" id="Section0023.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0024.xhtml" id="Section0024.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0025.xhtml" id="Section0025.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0026.xhtml" id="Section0026.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0027.xhtml" id="Section0027.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0028.xhtml" id="Section0028.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0029.xhtml" id="Section0029.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Section0030.xhtml" id="Section0030.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/notas.xhtml" id="notas.xhtml" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Styles/style.css" id="style.css" media-type="text/css"/>
+    <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
+
+    <item href="Images/ex_libris.png" id="ex_libris.png" media-type="image/png"/>
+  <item id="logo_mundo.jpg" href="Images/logo_mundo.jpg" media-type="image/jpeg"/>
+					</manifest>
+  <spine toc="ncx">
+    <itemref idref="cubierta.xhtml"/>
+    <itemref idref="sinopsis.xhtml"/>
+    <itemref idref="titulo.xhtml"/>
+    <itemref idref="info.xhtml"/>
+    <itemref idref="Section0001.xhtml"/>
+    <itemref idref="Section0002.xhtml"/>
+    <itemref idref="Section0003.xhtml"/>
+    <itemref idref="Section0004.xhtml"/>
+    <itemref idref="Section0005.xhtml"/>
+    <itemref idref="Section0006.xhtml"/>
+    <itemref idref="Section0007.xhtml"/>
+    <itemref idref="Section0008.xhtml"/>
+    <itemref idref="Section0009.xhtml"/>
+    <itemref idref="Section0010.xhtml"/>
+    <itemref idref="Section0011.xhtml"/>
+    <itemref idref="Section0012.xhtml"/>
+    <itemref idref="Section0013.xhtml"/>
+    <itemref idref="Section0014.xhtml"/>
+    <itemref idref="Section0015.xhtml"/>
+    <itemref idref="Section0016.xhtml"/>
+    <itemref idref="Section0017.xhtml"/>
+    <itemref idref="Section0018.xhtml"/>
+    <itemref idref="Section0019.xhtml"/>
+    <itemref idref="Section0020.xhtml"/>
+    <itemref idref="Section0021.xhtml"/>
+    <itemref idref="Section0022.xhtml"/>
+    <itemref idref="Section0023.xhtml"/>
+    <itemref idref="Section0024.xhtml"/>
+    <itemref idref="Section0025.xhtml"/>
+    <itemref idref="Section0026.xhtml"/>
+    <itemref idref="Section0027.xhtml"/>
+    <itemref idref="Section0028.xhtml"/>
+    <itemref idref="Section0029.xhtml"/>
+    <itemref idref="Section0030.xhtml"/>
+    <itemref idref="notas.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="Text/cubierta.xhtml" title="Cover" type="cover"/>
+  </guide>
+</package>
+

@@ -18,6 +18,7 @@
         <module>persistence-mongodb</module>
         <module>persistence-postgres</module>
         <module>rest-web</module>
+        <module>presenter-web</module>
     </modules>
 
 </project>

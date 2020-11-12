@@ -16,7 +16,6 @@ public class RestaurantResource {
 
     private final RestaurantService restaurantService;
 
-    @Autowired
     public RestaurantResource(RestaurantService restaurantService) {
         this.restaurantService = restaurantService;
     }
