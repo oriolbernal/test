@@ -1,10 +1,5 @@
 package com.obernalpo.ebook.model;
 
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
-
 public class EpubEbook extends Ebook {
 
     public EpubEbook(String fileName, String type, byte[] data) {
@@ -12,16 +7,11 @@ public class EpubEbook extends Ebook {
         this.type = type;
         this.data = data;
         try {
-            init("targetFile.tmp");
+            this.metadata = new EpubMetadata(fileName);
         } catch (Exception e) {
-            this.metadata = new Metadata(null);
+            this.metadata = new Metadata();
             e.printStackTrace();
         }
-    }
-
-    private void init(String filePath) throws ParserConfigurationException, SAXException, IOException {
-        this.metadata = new EpubMetadata(filePath);
-
     }
 
 }

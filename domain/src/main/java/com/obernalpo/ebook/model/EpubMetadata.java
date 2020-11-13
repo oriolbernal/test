@@ -11,7 +11,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.zip.ZipFile;
 
 @Getter
@@ -21,7 +23,6 @@ public class EpubMetadata extends Metadata {
     private static final Charset METADATA_ENCODING = StandardCharsets.UTF_8;
 
     public EpubMetadata(String filePath) throws IOException, SAXException, ParserConfigurationException {
-        super(Paths.get(filePath));
         Document document = readDocument(filePath);
         this.title = document.getElementsByTagName("dc:title").item(0).getTextContent();
         this.creator = document.getElementsByTagName("dc:creator").item(0).getTextContent();
@@ -29,6 +30,8 @@ public class EpubMetadata extends Metadata {
         this.rights = document.getElementsByTagName("dc:rights").item(0).getTextContent();
         this.publisher = document.getElementsByTagName("dc:publisher").item(0).getTextContent();
         this.identifier = document.getElementsByTagName("dc:identifier").item(0).getTextContent();
+        this.fileAttributes = Files.readAttributes(Paths.get(filePath), BasicFileAttributes.class);
+
     }
 
     private Document readDocument(String filePath) throws IOException, ParserConfigurationException, SAXException {

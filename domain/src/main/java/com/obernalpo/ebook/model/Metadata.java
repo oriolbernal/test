@@ -19,15 +19,7 @@ public class Metadata {
     protected String publisher;
     protected String identifier;
 
-    public Metadata(Path path) {
-        try {
-            init(path);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public Metadata() {
     }
 
-    private void init(Path path) throws IOException {
-        this.fileAttributes = Files.readAttributes(path, BasicFileAttributes.class);
-    }
 }

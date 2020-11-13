@@ -10,6 +10,9 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -30,14 +33,23 @@ public class FileDBResource {
             String fileName = StringUtils.cleanPath(file.getOriginalFilename());
             String fileType = file.getContentType();
             byte[] data = file.getBytes();
+            File tmpFile = createFile(fileName, data);
             Ebook ebook = new EpubEbook(fileName, fileType, data);
             storageService.store(ebook);
+            tmpFile.delete();
             message = "Uploaded the file successfully: " + file.getOriginalFilename();
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
         } catch (Exception e) {
             message = "Could not upload the file: " + file.getOriginalFilename() + "!";
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseMessage(message));
         }
+    }
+
+    private File createFile(String fileName, byte[] bytes) throws IOException {
+        InputStream inputStream = new ByteArrayInputStream(bytes);
+        File file = new File(fileName);
+        Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        return file;
     }
 
     @PostMapping("/uploads")
