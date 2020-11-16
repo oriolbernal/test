@@ -4,6 +4,7 @@ import com.obernalpo.ebook.model.Ebook;
 import com.obernalpo.ebook.ports.FilePersistence;
 import com.obernalpo.ebook.services.FileStorageService;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.stream.Stream;
 
@@ -16,8 +17,8 @@ public class FileStorageServiceImpl implements FileStorageService {
     }
 
     @Override
-    public Ebook store(Ebook ebook) throws IOException {
-        return filePersistence.store(ebook);
+    public void store(Ebook ebook) {
+        filePersistence.store(ebook);
     }
 
     @Override

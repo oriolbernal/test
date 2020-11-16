@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public interface FilePersistence {
 
-    Ebook store(Ebook file) throws IOException;
+    void store(Ebook file);
 
     Ebook getFileById(String id);
 

@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
-@Profile("prod")
+@Profile("dev")
 @Component
 public class DatabaseSeeder {
 
@@ -20,7 +20,6 @@ public class DatabaseSeeder {
     @Autowired
     public DatabaseSeeder(RestaurantRepository restaurantRepository) {
         this.restaurantRepository = restaurantRepository;
-        this.restaurantRepository.deleteAll();
         this.seedDatabase();
     }
 

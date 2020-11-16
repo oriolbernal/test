@@ -12,6 +12,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -33,23 +35,16 @@ public class FileDBResource {
             String fileName = StringUtils.cleanPath(file.getOriginalFilename());
             String fileType = file.getContentType();
             byte[] data = file.getBytes();
-            File tmpFile = createFile(fileName, data);
             Ebook ebook = new EpubEbook(fileName, fileType, data);
             storageService.store(ebook);
-            tmpFile.delete();
             message = "Uploaded the file successfully: " + file.getOriginalFilename();
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
         } catch (Exception e) {
+            System.out.println("Could not upload the file!");
+            e.printStackTrace();
             message = "Could not upload the file: " + file.getOriginalFilename() + "!";
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseMessage(message));
         }
-    }
-
-    private File createFile(String fileName, byte[] bytes) throws IOException {
-        InputStream inputStream = new ByteArrayInputStream(bytes);
-        File file = new File(fileName);
-        Files.copy(inputStream, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        return file;
     }
 
     @PostMapping("/uploads")
@@ -58,11 +53,15 @@ public class FileDBResource {
         String message = "";
         try {
             for(MultipartFile file : files) {
-                uploadFile(file);
+                if(file.getOriginalFilename() != null && !file.getOriginalFilename().equals("")) {
+                    System.out.println("File to be uploaded: " + file.getOriginalFilename());
+                    uploadFile(file);
+                }
             }
             message = "Uploaded the files successfully!";
             return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
         } catch (Exception e) {
+            System.out.println("Could not upload the files!");
             message = "Could not upload the files!";
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseMessage(message));
         }

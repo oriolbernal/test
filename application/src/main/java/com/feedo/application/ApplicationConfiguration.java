@@ -3,7 +3,8 @@ package com.feedo.application;
 import com.feedo.domain.ports.RestaurantPersistence;
 import com.feedo.domain.services.RestaurantService;
 import com.feedo.domain.services.services_impl.RestaurantServiceImpl;
-import com.feedo.persistence_postgres.adapters.FilePersistencePostgres;
+import com.feedo.persistence_postgres.adapters.EbookPersistencePostgres;
+import com.feedo.persistence_postgres.repositories.EbookRepository;
 import com.feedo.persistence_postgres.repositories.FileDBRepository;
 import com.feedo.persistence_postgres.repositories.RestaurantRepository;
 import com.feedo.persistence_postgres.adapters.RestaurantPersistencePostgres;
@@ -37,8 +38,8 @@ public class ApplicationConfiguration {
     }
 
     @Bean
-    public FilePersistence filePersistence(FileDBRepository fileDBRepository) {
-        return new FilePersistencePostgres(fileDBRepository);
+    public FilePersistence filePersistence(EbookRepository ebookRepository, FileDBRepository fileDBRepository) {
+        return new EbookPersistencePostgres(ebookRepository, fileDBRepository);
     }
 
 }

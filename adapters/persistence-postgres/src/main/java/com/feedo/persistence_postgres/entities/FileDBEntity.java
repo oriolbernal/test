@@ -3,19 +3,24 @@ package com.feedo.persistence_postgres.entities;
 import com.obernalpo.ebook.model.Ebook;
 import com.obernalpo.ebook.model.EpubEbook;
 import lombok.Data;
-import org.springframework.beans.BeanUtils;
+import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "EBOOKS")
+@Table(name = "FILES")
 public class FileDBEntity {
+
     @Id
-    private String identifier;
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    @Column(name = "id")
+    private String id;
+
+    @OneToOne(mappedBy = "file")
+    private EbookEntity ebook;
+
     private String fileName;
     private String type;
     @Lob
@@ -24,15 +29,11 @@ public class FileDBEntity {
     public FileDBEntity() {
     }
 
-    public FileDBEntity(Ebook ebook) {
-        this.identifier = ebook.getMetadata().getIdentifier();
-        this.fileName = ebook.getFileName();
-        this.type = ebook.getType();
-        this.data = ebook.getData();
-    }
-
-    public Ebook toEbook() {
-        return new EpubEbook(fileName, type, data);
+    public FileDBEntity(String identifier, String fileName, String type, byte[] data) {
+        this.id = identifier;
+        this.fileName = fileName;
+        this.type = type;
+        this.data = data;
     }
 
 }
